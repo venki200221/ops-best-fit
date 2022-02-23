@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BEST-FIT ALOGORITHM </title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="mainContainer">
+	<div id="title">
+		<h1>Memory Management</h1><h3>Stimulator-BEST FIT ALOGORITHM</h3>
+	</div>
+
+	<div id="rightContainer">
+		<div id="memoryContainer">
+			<div id="memory"></div>
+		</div>
+	</div>
+
+	<div id="leftContainer">
+		<h2>Enter Process</h2>
+		<form id="processForm">
+			<input type="text" name="processSize" placeholder="Process size" autocomplete="off" />
+			<input type="text" name="processTime" placeholder="Process time" autocomplete="off" />
+			<br>
+			<button  type="submit" class="btn btn-outline-secondary sub"  >Submit</button>
+		</form>
+		<br><br>
+		<h2>Process Queue</h2>
+		<table id="processTable">
+			<tr><th>Process ID</th><th>Size (K)</th><th>Time Units Remaining</th></tr>
+		</table>
+		<br>
+		<br>
+		<div id="logBoxContainer">
+			<div id="logBox">DEBUG LOG<br></div>
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
